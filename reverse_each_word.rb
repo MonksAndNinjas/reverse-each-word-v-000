@@ -9,8 +9,8 @@ def reverse_each_word(sentence)
 end
 
 def reverse_each_word(sentence)
-  sentence.scan(/\w\w?*\S\w?/)
-  .collect do |word|
+  words = sentence.scan(/\w\w?*\S\w?/)
+  collect_words = words.collect do |word|
     word.reverse
   end
   .join(" ")
