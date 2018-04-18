@@ -10,6 +10,7 @@ end
 
 def reverse_each_word(sentence)
   words = sentence.scan(/\w\w?*\S\w?/)
+  word_reverse = []
   sentence.collect do |word|
 
 end
