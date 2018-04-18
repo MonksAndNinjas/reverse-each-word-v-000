@@ -1,6 +1,6 @@
 
 def reverse_each_word(sentence)
-  words = sentence.scan(/\w\S*\w\S|\w/)
+  words = sentence.scan(/\w\w?*\S\w?/)
   word_reverse = []
   words.each do |word|
     word_reverse << word.reverse
